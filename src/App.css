@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    min-height: 200vh;
+}
+
+.App {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*for some reason the sticky navbar doesn't want to work unless I apply the sticky to all divs :')*/
+div {
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.75;
+    transition: opacity .1s linear;
+}
+
+nav a:hover {
+    opacity: 1;
+}
